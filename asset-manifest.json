@@ -1,15 +1,17 @@
 {
   "files": {
-    "main.css": "/react-leaflet-map/static/css/main.90a522a0.chunk.css",
-    "main.js": "/react-leaflet-map/static/js/main.4c072725.chunk.js",
-    "main.js.map": "/react-leaflet-map/static/js/main.4c072725.chunk.js.map",
+    "main.css": "/react-leaflet-map/static/css/main.18a0d2d2.chunk.css",
+    "main.js": "/react-leaflet-map/static/js/main.b2f5fba0.chunk.js",
+    "main.js.map": "/react-leaflet-map/static/js/main.b2f5fba0.chunk.js.map",
     "runtime-main.js": "/react-leaflet-map/static/js/runtime-main.b6276579.js",
     "runtime-main.js.map": "/react-leaflet-map/static/js/runtime-main.b6276579.js.map",
-    "static/js/2.e8ba0f8b.chunk.js": "/react-leaflet-map/static/js/2.e8ba0f8b.chunk.js",
-    "static/js/2.e8ba0f8b.chunk.js.map": "/react-leaflet-map/static/js/2.e8ba0f8b.chunk.js.map",
+    "static/css/2.c3ff3e26.chunk.css": "/react-leaflet-map/static/css/2.c3ff3e26.chunk.css",
+    "static/js/2.8089d947.chunk.js": "/react-leaflet-map/static/js/2.8089d947.chunk.js",
+    "static/js/2.8089d947.chunk.js.map": "/react-leaflet-map/static/js/2.8089d947.chunk.js.map",
     "index.html": "/react-leaflet-map/index.html",
-    "static/css/main.90a522a0.chunk.css.map": "/react-leaflet-map/static/css/main.90a522a0.chunk.css.map",
-    "static/js/2.e8ba0f8b.chunk.js.LICENSE.txt": "/react-leaflet-map/static/js/2.e8ba0f8b.chunk.js.LICENSE.txt",
+    "static/css/2.c3ff3e26.chunk.css.map": "/react-leaflet-map/static/css/2.c3ff3e26.chunk.css.map",
+    "static/css/main.18a0d2d2.chunk.css.map": "/react-leaflet-map/static/css/main.18a0d2d2.chunk.css.map",
+    "static/js/2.8089d947.chunk.js.LICENSE.txt": "/react-leaflet-map/static/js/2.8089d947.chunk.js.LICENSE.txt",
     "static/media/icon-bicycle-grey.7b8cb6aa.svg": "/react-leaflet-map/static/media/icon-bicycle-grey.7b8cb6aa.svg",
     "static/media/icon-bicycle-white.0cdc8c9e.svg": "/react-leaflet-map/static/media/icon-bicycle-white.0cdc8c9e.svg",
     "static/media/icon-bicycle.39345ce0.svg": "/react-leaflet-map/static/media/icon-bicycle.39345ce0.svg",
@@ -23,8 +25,9 @@
   },
   "entrypoints": [
     "static/js/runtime-main.b6276579.js",
-    "static/js/2.e8ba0f8b.chunk.js",
-    "static/css/main.90a522a0.chunk.css",
-    "static/js/main.4c072725.chunk.js"
+    "static/css/2.c3ff3e26.chunk.css",
+    "static/js/2.8089d947.chunk.js",
+    "static/css/main.18a0d2d2.chunk.css",
+    "static/js/main.b2f5fba0.chunk.js"
   ]
 }
