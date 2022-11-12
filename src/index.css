@@ -112,3 +112,12 @@ h5,
 .typography-caption {
   font-size: 12px;
 }
+
+.leaflet-tooltip{
+    background: rgba(0, 0, 0, 0) !important;
+      border: none !important;
+      font-size: 16px;
+      box-shadow: none !important;
+      color:#00cae1;
+      font-weight: 700;
+}

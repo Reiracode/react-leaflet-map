@@ -10,6 +10,11 @@ import parkingGreySvg from "../assets/icon-parking-grey.svg";
 import parkingWhiteSvg from "../assets/icon-parking-white.svg";
 
 import { useEffect, useRef } from "react";
+// import { MapContainer, TileLayer, useMapEvents } from "react-leaflet";
+import { MapContainer, TileLayer, Marker, Popup, useMapEvents } from 'react-leaflet';
+
+import tileLayer from '../utils/tileLayer';
+
 import decideByAvailability from "../utils/decideByAvailability";
 import L from "leaflet";
 // https://cherniavskii.com/using-leaflet-in-react-apps-with-react-hooks/
@@ -22,6 +27,17 @@ export default function BikeMap({
   handleLocateUser,
   handleFindingType,
 }) {
+  function MyComponent() {
+    const map = useMapEvents({
+      dragend: (e) => {
+        console.log("mapCenter", e.target.getCenter());
+        console.log("map bounds", e.target.getBounds());
+      }
+    });
+    return null;
+  }
+
+
   // create map
   const bikeMapRef = useRef(null);
 
@@ -54,6 +70,8 @@ export default function BikeMap({
       ]
     });
 
+    MapContainer
+
   }, [userPosition]);
 
 
@@ -61,6 +79,13 @@ export default function BikeMap({
   useEffect(() => {
     if (!bikeMapRef.current) return; //no map
     // create your position icon
+ 
+
+    if (userPositionMarkerRef.current)
+      bikeMapRef.current.removeLayer(userPositionMarkerRef.current);
+    bikeMapRef.current.setView(userPosition, 15);
+    
+
     const userPositionIcon = L.icon({
       iconUrl: userPositionMobileSvg,
       iconSize: [36, 36]
@@ -70,12 +95,12 @@ export default function BikeMap({
     userPositionMarkerRef.current = L.marker(userPosition, {
       icon: userPositionIcon,
     });
-
-    if (userPositionMarkerRef.current)
-      bikeMapRef.current.removeLayer(userPositionMarkerRef.current);
-      bikeMapRef.current.setView(userPosition, 15);
     // add marker
     userPositionMarkerRef.current.addTo(bikeMapRef.current);
+
+
+
+
   }, [userPosition]);
 
 
@@ -147,8 +172,9 @@ export default function BikeMap({
     });
   }, [bikesAvailable, isFindingBikes]);
 
- 
+
   return userPosition ? <div id="bike_map">
+    <MyComponent/>
     <div className="find_type_wrapper">
       <label htmlFor="find_bikes">
         <input
