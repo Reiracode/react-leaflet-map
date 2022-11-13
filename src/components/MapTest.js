@@ -48,10 +48,10 @@ function createIcon(name) {
 
 export default function MapTest() {
   // ---------way1
-  // const TAIPEI_COORDINATES = [35.4122, 139.4130];
-  const TAIPEI_COORDINATES = [25.0223245, 121.499514];
+  const TAIPEI_COORDINATES = [35.4122, 139.4130];
+  // const TAIPEI_COORDINATES = [25.0223245, 121.499514];
   
-  const [userPosition, setUserPosition] = useState(TAIPEI_COORDINATES);
+  const [userPosition, setUserPosition] = useState(null);
   const [dragposi, setDragposi] = useState(null);
   // const [userPosition, setUserPosition] = useState(position)
   const [getdata, setGetdata] = useState([]);
@@ -254,7 +254,7 @@ export default function MapTest() {
   // }
 
   return (
-    userPosition.length ?
+    userPosition ?
     <MapContainer
       center={userPosition}
       zoom={16}
