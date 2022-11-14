@@ -5,7 +5,7 @@ import "leaflet/dist/leaflet.css";
 import "../index.css";
 import { getAvailableBikes } from "../utils/fetchTdxApi";
 import geolocactionSvg from "../assets/icon-geolocation.svg";
-import ChangeCenter from "./ChangeCenter";
+
 import marker from '../assets/icon-user-position-mobile.svg';
 
 import bikemarker0 from "../assets/icon-bike-marker-grey.svg";
@@ -48,7 +48,7 @@ function availabilityNum(options) {
 }
 
 
-export default function MapTest() {
+export default function MapReload() {
   // ---------way1
   const TAIPEI_COORDINATES = [35.4122, 139.4130];
   // const TAIPEI_COORDINATES = [25.0223245, 121.499514];
@@ -324,12 +324,6 @@ export default function MapTest() {
         scrollWheelZoom={true}
         style={{ height: "100vh" }}
         >
-
-          <ChangeCenter
-            center={userPosition }
-          />
-
-
           
         <TileLayer
           attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'

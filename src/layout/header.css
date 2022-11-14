@@ -24,11 +24,7 @@ header img {
   justify-content: center;
 }
 
-@media (min-width: 1200px) {
-  .header_wrapper {
-    padding: 22px 72px;
-  }
-}
+ 
 
 .logo {
   width: 100px;
@@ -37,8 +33,8 @@ header img {
 
 @media (min-width: 1200px) {
   .logo {
-    width: 214px;
-    height: 32px;
+      width: 150px;
+      height: 32px;
   }
 }
 

@@ -9,7 +9,7 @@ function Logo() {
       <a
         target="_blank"
         rel="noreferrer"
-        href="https://reiracode.github.io/nbike"
+        href="https://reiracode.github.io/react-leaflet-map"
       >
         <img src={logoSvg} alt="Bikeland" />
       </a>

@@ -65,6 +65,7 @@ export default function App() {
 
 
       {/* <MapWrapper /> */}
+      <Header />
      < MapTest/>  
       {/* way1 contry  */}
       {/* <MapArea coordinate={coordinate} />
