@@ -1,4 +1,4 @@
-import { useMap } from "react-leaflet";
+import { useMap, useMapEvents } from "react-leaflet";
 
 const ChangeCenter = (props) => {
   const map = useMap();
@@ -6,4 +6,9 @@ const ChangeCenter = (props) => {
   return null;
 };
 
-export default ChangeCenter;
+ 
+
+
+export { ChangeCenter };
+
+
