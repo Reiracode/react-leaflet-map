@@ -293,7 +293,7 @@ export default function MapTest() {
 
 
   return (
-    <>
+    <main>
       {isLocatingUser ? locatingMessage : null}
 
       {userPosition ?
@@ -301,7 +301,8 @@ export default function MapTest() {
           center={userPosition}
           zoom={16}
           scrollWheelZoom={true}
-          style={{ height: "100vh" }}
+          // id={bike_map}
+          style={{ height: "calc(100vh - 40px)" }}
         >
           <ChangeCenter
             center={userPosition}
@@ -375,7 +376,7 @@ export default function MapTest() {
         : null
       }
 
-    </>
+    </main>
   )
 
 }
