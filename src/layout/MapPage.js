@@ -24,7 +24,8 @@ export default function MapPage() {
   const [isLocatingUser, setIsLocatingUser] = useState(true);
   const locatingMessage = (
     <div className="overlay">
-      <span className="typography-bold typography-h4">定位中</span>
+      <div className="loader"></div> 
+      {/* <span className="typography-bold typography-h4">定位中...</span> */}
     </div>
   );
 
@@ -85,6 +86,7 @@ export default function MapPage() {
 
   return (
     <main>
+      {/* {locatingMessage} */}
       {isLocatingUser ? locatingMessage : null}
       {userPosition ?
         <MapChild
