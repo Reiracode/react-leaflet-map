@@ -2,8 +2,6 @@
 // https://tdx.transportdata.tw/api-service/swagger#/Bike%20Advanced(Nearby)/BikeApi_Station_AllCity_NearBy_2870
 
 export async function getAvailableBikes(userPosition) {
-  console.log(userPosition)
-
   if (userPosition.length == 0){
     console.log("0")
     return;
@@ -16,7 +14,6 @@ export async function getAvailableBikes(userPosition) {
     const [lat, lng] = userPosition;
     // const stationUrl = `https://tdx.transportdata.tw/api/basic/v2/Bike/Station/City/Taipei?&%24format=JSON`;
     // const bikeUrl = `https://tdx.transportdata.tw/api/basic/v2/Bike/Availability/City/Taipei?%24format=JSON`;
-
     // const stationUrl = `https://tdx.transportdata.tw/api/basic/v2/Bike/Station/City/Taipei?%24top=30&%24spatialFilter=nearby(${lat},${lng},1000)&%24format=JSON`;
     // const bikeUrl = `https://tdx.transportdata.tw/api/basic/v2/Bike/Availability/City/Taipei?%24format=JSON`;
 
@@ -30,10 +27,8 @@ export async function getAvailableBikes(userPosition) {
 
     const result = [];
     const [stationData, bikeData] = [data[0].value, data[1].value];
-
+    
     const stationIndex = stationData.map(item => item.StationUID);
-    // console.log(stationIndex)
-
     const bikeDetail = bikeData.filter((item) => stationIndex.indexOf(item.StationUID) > -1)
     // console.log(bikeDetail)
 
@@ -67,7 +62,6 @@ export default async function fetchTdxApi(url) {
   const tokenCode = await getToken();
   try {
     const response = await fetch(url, { headers: { authorization: `Bearer ${tokenCode.access_token}` } });
-    
     // const response = await fetch(url);
     const data = await response.json();
     return data;

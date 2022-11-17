@@ -114,14 +114,21 @@ h5,
 }
 
 .leaflet-tooltip{
-      /* background: #fff !important; */
-        width: 30px;
-        height: 30px;
-        border-radius: 50%;
-        font-size: 16px;
-        box-shadow: none !important;
-        color: #00cae1;
-        font-weight: 500;
-        line-height: 1.4;
-        padding: 0!important  ;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  font-size: 16px;
+  box-shadow: none !important;
+  color: #00cae1;
+  font-weight: 500;
+  line-height: 1.4;
+  padding: 0!important  ;
 }
+
+/* .leaflet-tooltip span.test1{
+  color: palevioletred;
+} */
+/* .leaflet-tooltip span.test2 {
+  color: #fb61fb;
+
+} */

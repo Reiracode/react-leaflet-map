@@ -13,6 +13,7 @@
 // };
 
 const asyncGetGeolocation = () => {
+  const JAPAN_COORDINATES = [35.4122, 139.4130];
   return new Promise((resolve) => {
     if (navigator.geolocation) {
       const position = (position) => {
@@ -33,7 +34,8 @@ const asyncGetGeolocation = () => {
             alert("Error");
             break;
         }
-        resolve([35.4122, 139.4130]);
+        // resolve([35.4122, 139.4130]);
+        resolve(JAPAN_COORDINATES);
       };
       navigator.geolocation.getCurrentPosition(position, showError);
     }
