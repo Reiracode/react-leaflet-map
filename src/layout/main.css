@@ -177,11 +177,8 @@ button.geolocation {
 
 @media (min-width: 1200px) {
   button.geolocation {
-    position: fixed;
-    top: 112px;
-    right: calc(50vw - 218px);
-    width: 60px;
-    height: 60px;
+    width: 45px;
+    height: 45px;
   }
 
   button.geolocation img {
