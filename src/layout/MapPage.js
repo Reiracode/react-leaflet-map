@@ -36,9 +36,10 @@ export default function MapPage() {
     setUserPosition(urlocation);
  
     const bikes = await getAvailableBikes(urlocation);
-    setGetdata(bikes);
+    setGetdata(bikes); 
     setIsLocatingUser(false);
   }, [])
+
 
   //get dragPosition ==> then get bikes
   async function getdragPosition() {

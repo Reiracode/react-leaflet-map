@@ -27,6 +27,9 @@ export async function getAvailableBikes(userPosition) {
 
     const result = [];
     const [stationData, bikeData] = [data[0].value, data[1].value];
+    // console.log(stationData)
+    // console.log(bikeData)
+
     
     const stationIndex = stationData.map(item => item.StationUID);
     const bikeDetail = bikeData.filter((item) => stationIndex.indexOf(item.StationUID) > -1)
@@ -73,8 +76,8 @@ export default async function fetchTdxApi(url) {
 async function getToken() {
   const parameter = {
     grant_type: "client_credentials",
-    client_id: "reira.igg-178246c9-c6da-466e",
-    client_secret: "9f16dc51-0a6e-492c-9dd6-278b917d0c67"
+    client_id: process.env.REACT_APP_API_ID,
+    client_secret: process.env.REACT_APP_API_KEY
   };
   let auth_url = "https://tdx.transportdata.tw/auth/realms/TDXConnect/protocol/openid-connect/token";
   const queryString = new URLSearchParams(parameter).toString();
