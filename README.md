@@ -6,12 +6,10 @@ This project is a Taiwan Ubike map web application developed using React and Lea
 ## Features
 
 - Interactive map with real-time information on ubike station location and availability.
-- Search bar for users to search for ubike stations by name or location.
 - Filter function to filter ubike stations by availability and distance.
 - Mobile responsive design for users to use the application on mobile devices.
 - Display locations of all Ubike stations in Taiwan
 - View detailed information of each station including available bikes and parking spaces
-- Toggle heatmap to visualize bike availability
 - Responsive design optimized for mobile devices
 
 ## Technologies Used
