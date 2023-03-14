@@ -1,5 +1,5 @@
 
-# Taiwan Ubike Map - Frontend Developer Job Application
+# Taiwan Ubike Map 
 
 This project is a Taiwan Ubike map web application developed using React and Leaflet. It provides users with real-time information on the location and availability of ubike stations across Taiwan.
 
