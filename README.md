@@ -27,4 +27,24 @@ Check out the [live demo](https://reiracode.github.io/react-leaflet-map/)!
 
 ```sh
 git clone https://github.com/reiracode/react-leaflet-map.git
- 
+
+2. Install packages
+
+```sh
+cd react-leaflet-map
+npm install
+
+
+
+Open http://localhost:3000 to view the app in your browser.
+Built With
+React
+Leaflet
+React Leaflet
+react-leaflet-search
+react-leaflet-heatmap-layer
+Contributing
+Contributions are welcome! Please open an issue or submit a pull request.
+
+License
+Distributed under the MIT License. See LICENSE for more information.
