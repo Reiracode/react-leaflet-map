@@ -32,6 +32,43 @@ This project is a Taiwan Ubike map web application developed using React and Lea
 - `src/store/`: Contains the Redux store configuration.
 - `src/utils/`: Contains utility functions used in the application.
 
+## 開發目的
+
+此網站的開發目的是提供使用者一個方便快速找到臺北市Ubike站點位置及相關資訊的工具，透過網站上的地圖，使用者可以方便地查找附近的Ubike站點，並瞭解該站點的詳細資訊。
+
+## 使用技術
+
+此網站使用了以下技術：
+
+- React.js：主要的前端框架，用於構建用戶界面和控制應用邏輯。
+- Leaflet.js：開源地圖庫，用於顯示地圖和Ubike站點位置。
+- React-Leaflet：用於將React和Leaflet進行整合，方便開發React.js應用中的地圖功能。
+- Axios：用於對Ubike API進行請求，獲取Ubike站點資訊。
+- Material-UI：React UI元件庫，用於提供基礎的UI元件和樣式。
+
+## Plugins and Libraries
+
+此網站使用了以下插件和庫：
+
+- leaflet.markercluster：用於將Ubike站點按地理位置聚集顯示，方便用戶查看站點密度和分佈情況。
+- react-infinite-scroll-component：用於實現無限滾動載入Ubike站點資訊，提高用戶體驗。
+
+總體來說，這個找Ubike的網站使用了現代化的前端技術，並整合了多個庫和插件，提供了方便快捷的Ubike站點查詢功能，可以為臺北市Ubike騎士提供良好的用戶體驗。
+## Demo
+
+你可以點擊以下鏈接查看網站Demo：
+
+- https://reiracode.github.io/react-leaflet-map/
+
+## 使用說明
+
+此網站使用非常簡單，只需要在地圖上瀏覽即可。點擊任意Ubike站點圖標，會出現該站點的詳細資訊，包括站點名稱、剩餘車輛數量、可停車位數量等等。
+
+網站頂部的搜索欄位可以用於搜索指定位置附近的Ubike站點。你可以在搜索欄位輸入任意位置，然後按下Enter鍵，網站會自動顯示該位置附近的Ubike站點。在搜索結果中點擊任意站點，可以查看該站點的詳細資訊。
+
+
+
+
 ## Plugins and Libraries
 
 - React Leaflet: A React library for Leaflet maps.
