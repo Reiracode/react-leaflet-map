@@ -4,12 +4,14 @@
 This project is a Taiwan Ubike map web application developed using React and Leaflet. It provides users with real-time information on the location and availability of ubike stations across Taiwan.
 
 提供使用者以即時定位，快速找到附近的Ubike站點位置及可用車位/可用車輛，並可透過拖曳地圖的方式，顯示範圍內的站點密度和分佈情況。
+顯示台灣所有Ubike站點的位置。
 
 ## Features
 - Interactive map with real-time information on ubike station location and availability.
 - Display locations of all Ubike stations in Taiwan
 - View detailed information of each station including available bikes and parking spaces
 - RWD design for users to use the application on mobile devices.
+ 
 
 ## 使用技術
 
@@ -21,11 +23,6 @@ This project is a Taiwan Ubike map web application developed using React and Lea
 - React Geolocated 
 - Axios：用於對Ubike API進行請求，獲取Ubike站點資訊。
 - Material-UI：React UI元件庫，用於提供基礎的UI元件和樣式。
-
-
-## 使用說明
-
-使用非常簡單，開啟定位後，瀏覽地圖，可點擊任意Ubike站點icon，即會顯示站點的詳細資訊，包括站點名稱、剩餘車輛數量、可停車位數量等等。
  
  
 ## Demo
