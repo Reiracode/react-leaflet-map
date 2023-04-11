@@ -30,3 +30,14 @@ This project is a Taiwan Ubike map web application developed using React and Lea
 Check out the [live demo](https://reiracode.github.io/react-leaflet-map/)!
 
  
+
+## 功能與特色
+
+- 查詢站點：使用者可以輸入關鍵字或點選地圖上的地區來查詢該地區的Ubike站點資訊。
+- 地圖視覺化：地圖上的Ubike站點會用標記呈現，並隨著使用者移動地圖而重新渲染。
+- 站點詳細資訊：使用者點選地圖上的Ubike站點標記，會出現該站點的詳細資訊，包括可借車輛數量、可還車位數量等資訊。
+- 路線規劃：使用者可以在地圖上點選起點和終點來規劃自行車路線，並可選擇步行/自行車/開車模式。
+
+## Demo
+
+![Demo GIF](https://i.imgur.com/8RPlHHy.gif)
